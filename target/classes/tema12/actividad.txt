@@ -1,0 +1,309 @@
+El sistema de ficheros de un sistema operativo almacena diversidad de información sobre los archivos y
+carpetas que puede resultar útil conocer: sus atributos de acceso, su tamaño, la fecha de modificación,
+etc. En general, todos los datos mostrados en acceder a las propiedades del archivo. Esta información
+también   puede   ser   consultada   usando   los  métodos   adecuados.   Entre   los   más   populares  hay   los
+siguientes:
+•long length() devuelve el tamaño de un archivo en bytes. Este método solo puede ser llamado
+sobre una ruta que represente un archivo, de lo contrario no se puede garantizar que el resultado
+sea válido.
+•long lastModified() devuelve la última fecha de edición del elemento representado por esta ruta.
+El resultado se codifica en un único número entero cuyo valor es el número de milisegundos que
+han pasado desde el 1 de junio de 1970.
+El   ejemplo   siguiente   muestra   cómo   funcionan   estos   métodos.   Para   probarlos   crea   el   archivo
+“Documento.txt" en la carpeta "C:\Temp". Primero deja el archivo vacío y ejecuta el programa. Luego, con
+un editor de texto, escribe cualquier cosa, guarda los cambios y vuelve a ejecutar el programa. Observa
+cómo el resultado es diferente. Como curiosidad, fíjate en el uso de la clase Date para poder mostrar la
+fecha en un formato legible.
+El sistema de ficheros de un sistema operativo almacena diversidad de información sobre los archivos y
+carpetas que puede resultar útil conocer: sus atributos de acceso, su tamaño, la fecha de modificación,
+etc. En general, todos los datos mostrados en acceder a las propiedades del archivo. Esta información
+también   puede   ser   consultada   usando   los  métodos   adecuados.   Entre   los   más   populares  hay   los
+siguientes:
+•long length() devuelve el tamaño de un archivo en bytes. Este método solo puede ser llamado
+sobre una ruta que represente un archivo, de lo contrario no se puede garantizar que el resultado
+sea válido.
+•long lastModified() devuelve la última fecha de edición del elemento representado por esta ruta.
+El resultado se codifica en un único número entero cuyo valor es el número de milisegundos que
+han pasado desde el 1 de junio de 1970.
+El   ejemplo   siguiente   muestra   cómo   funcionan   estos   métodos.   Para   probarlos   crea   el   archivo
+“Documento.txt" en la carpeta "C:\Temp". Primero deja el archivo vacío y ejecuta el programa. Luego, con
+un editor de texto, escribe cualquier cosa, guarda los cambios y vuelve a ejecutar el programa. Observa
+cómo el resultado es diferente. Como curiosidad, fíjate en el uso de la clase Date para poder mostrar la
+fecha en un formato legible.
+El sistema de ficheros de un sistema operativo almacena diversidad de información sobre los archivos y
+carpetas que puede resultar útil conocer: sus atributos de acceso, su tamaño, la fecha de modificación,
+etc. En general, todos los datos mostrados en acceder a las propiedades del archivo. Esta información
+también   puede   ser   consultada   usando   los  métodos   adecuados.   Entre   los   más   populares  hay   los
+siguientes:
+•long length() devuelve el tamaño de un archivo en bytes. Este método solo puede ser llamado
+sobre una ruta que represente un archivo, de lo contrario no se puede garantizar que el resultado
+sea válido.
+•long lastModified() devuelve la última fecha de edición del elemento representado por esta ruta.
+El resultado se codifica en un único número entero cuyo valor es el número de milisegundos que
+han pasado desde el 1 de junio de 1970.
+El   ejemplo   siguiente   muestra   cómo   funcionan   estos   métodos.   Para   probarlos   crea   el   archivo
+“Documento.txt" en la carpeta "C:\Temp". Primero deja el archivo vacío y ejecuta el programa. Luego, con
+un editor de texto, escribe cualquier cosa, guarda los cambios y vuelve a ejecutar el programa. Observa
+cómo el resultado es diferente. Como curiosidad, fíjate en el uso de la clase Date para poder mostrar la
+fecha en un formato legible.
+El sistema de ficheros de un sistema operativo almacena diversidad de información sobre los archivos y
+carpetas que puede resultar útil conocer: sus atributos de acceso, su tamaño, la fecha de modificación,
+etc. En general, todos los datos mostrados en acceder a las propiedades del archivo. Esta información
+también   puede   ser   consultada   usando   los  métodos   adecuados.   Entre   los   más   populares  hay   los
+siguientes:
+•long length() devuelve el tamaño de un archivo en bytes. Este método solo puede ser llamado
+sobre una ruta que represente un archivo, de lo contrario no se puede garantizar que el resultado
+sea válido.
+•long lastModified() devuelve la última fecha de edición del elemento representado por esta ruta.
+El resultado se codifica en un único número entero cuyo valor es el número de milisegundos que
+han pasado desde el 1 de junio de 1970.
+El   ejemplo   siguiente   muestra   cómo   funcionan   estos   métodos.   Para   probarlos   crea   el   archivo
+“Documento.txt" en la carpeta "C:\Temp". Primero deja el archivo vacío y ejecuta el programa. Luego, con
+un editor de texto, escribe cualquier cosa, guarda los cambios y vuelve a ejecutar el programa. Observa
+cómo el resultado es diferente. Como curiosidad, fíjate en el uso de la clase Date para poder mostrar la
+fecha en un formato legible.
+El sistema de ficheros de un sistema operativo almacena diversidad de información sobre los archivos y
+carpetas que puede resultar útil conocer: sus atributos de acceso, su tamaño, la fecha de modificación,
+etc. En general, todos los datos mostrados en acceder a las propiedades del archivo. Esta información
+también   puede   ser   consultada   usando   los  métodos   adecuados.   Entre   los   más   populares  hay   los
+siguientes:
+•long length() devuelve el tamaño de un archivo en bytes. Este método solo puede ser llamado
+sobre una ruta que represente un archivo, de lo contrario no se puede garantizar que el resultado
+sea válido.
+•long lastModified() devuelve la última fecha de edición del elemento representado por esta ruta.
+El resultado se codifica en un único número entero cuyo valor es el número de milisegundos que
+han pasado desde el 1 de junio de 1970.
+El   ejemplo   siguiente   muestra   cómo   funcionan   estos   métodos.   Para   probarlos   crea   el   archivo
+“Documento.txt" en la carpeta "C:\Temp". Primero deja el archivo vacío y ejecuta el programa. Luego, con
+un editor de texto, escribe cualquier cosa, guarda los cambios y vuelve a ejecutar el programa. Observa
+cómo el resultado es diferente. Como curiosidad, fíjate en el uso de la clase Date para poder mostrar la
+fecha en un formato legible.
+El sistema de ficheros de un sistema operativo almacena diversidad de información sobre los archivos y
+carpetas que puede resultar útil conocer: sus atributos de acceso, su tamaño, la fecha de modificación,
+etc. En general, todos los datos mostrados en acceder a las propiedades del archivo. Esta información
+también   puede   ser   consultada   usando   los  métodos   adecuados.   Entre   los   más   populares  hay   los
+siguientes:
+•long length() devuelve el tamaño de un archivo en bytes. Este método solo puede ser llamado
+sobre una ruta que represente un archivo, de lo contrario no se puede garantizar que el resultado
+sea válido.
+•long lastModified() devuelve la última fecha de edición del elemento representado por esta ruta.
+El resultado se codifica en un único número entero cuyo valor es el número de milisegundos que
+han pasado desde el 1 de junio de 1970.
+El   ejemplo   siguiente   muestra   cómo   funcionan   estos   métodos.   Para   probarlos   crea   el   archivo
+“Documento.txt" en la carpeta "C:\Temp". Primero deja el archivo vacío y ejecuta el programa. Luego, con
+un editor de texto, escribe cualquier cosa, guarda los cambios y vuelve a ejecutar el programa. Observa
+cómo el resultado es diferente. Como curiosidad, fíjate en el uso de la clase Date para poder mostrar la
+fecha en un formato legible.
+El sistema de ficheros de un sistema operativo almacena diversidad de información sobre los archivos y
+carpetas que puede resultar útil conocer: sus atributos de acceso, su tamaño, la fecha de modificación,
+etc. En general, todos los datos mostrados en acceder a las propiedades del archivo. Esta información
+también   puede   ser   consultada   usando   los  métodos   adecuados.   Entre   los   más   populares  hay   los
+siguientes:
+•long length() devuelve el tamaño de un archivo en bytes. Este método solo puede ser llamado
+sobre una ruta que represente un archivo, de lo contrario no se puede garantizar que el resultado
+sea válido.
+•long lastModified() devuelve la última fecha de edición del elemento representado por esta ruta.
+El resultado se codifica en un único número entero cuyo valor es el número de milisegundos que
+han pasado desde el 1 de junio de 1970.
+El   ejemplo   siguiente   muestra   cómo   funcionan   estos   métodos.   Para   probarlos   crea   el   archivo
+“Documento.txt" en la carpeta "C:\Temp". Primero deja el archivo vacío y ejecuta el programa. Luego, con
+un editor de texto, escribe cualquier cosa, guarda los cambios y vuelve a ejecutar el programa. Observa
+cómo el resultado es diferente. Como curiosidad, fíjate en el uso de la clase Date para poder mostrar la
+fecha en un formato legible.
+El sistema de ficheros de un sistema operativo almacena diversidad de información sobre los archivos y
+carpetas que puede resultar útil conocer: sus atributos de acceso, su tamaño, la fecha de modificación,
+etc. En general, todos los datos mostrados en acceder a las propiedades del archivo. Esta información
+también   puede   ser   consultada   usando   los  métodos   adecuados.   Entre   los   más   populares  hay   los
+siguientes:
+•long length() devuelve el tamaño de un archivo en bytes. Este método solo puede ser llamado
+sobre una ruta que represente un archivo, de lo contrario no se puede garantizar que el resultado
+sea válido.
+•long lastModified() devuelve la última fecha de edición del elemento representado por esta ruta.
+El resultado se codifica en un único número entero cuyo valor es el número de milisegundos que
+han pasado desde el 1 de junio de 1970.
+El   ejemplo   siguiente   muestra   cómo   funcionan   estos   métodos.   Para   probarlos   crea   el   archivo
+“Documento.txt" en la carpeta "C:\Temp". Primero deja el archivo vacío y ejecuta el programa. Luego, con
+un editor de texto, escribe cualquier cosa, guarda los cambios y vuelve a ejecutar el programa. Observa
+cómo el resultado es diferente. Como curiosidad, fíjate en el uso de la clase Date para poder mostrar la
+fecha en un formato legible.
+El sistema de ficheros de un sistema operativo almacena diversidad de información sobre los archivos y
+carpetas que puede resultar útil conocer: sus atributos de acceso, su tamaño, la fecha de modificación,
+etc. En general, todos los datos mostrados en acceder a las propiedades del archivo. Esta información
+también   puede   ser   consultada   usando   los  métodos   adecuados.   Entre   los   más   populares  hay   los
+siguientes:
+•long length() devuelve el tamaño de un archivo en bytes. Este método solo puede ser llamado
+sobre una ruta que represente un archivo, de lo contrario no se puede garantizar que el resultado
+sea válido.
+•long lastModified() devuelve la última fecha de edición del elemento representado por esta ruta.
+El resultado se codifica en un único número entero cuyo valor es el número de milisegundos que
+han pasado desde el 1 de junio de 1970.
+El   ejemplo   siguiente   muestra   cómo   funcionan   estos   métodos.   Para   probarlos   crea   el   archivo
+“Documento.txt" en la carpeta "C:\Temp". Primero deja el archivo vacío y ejecuta el programa. Luego, con
+un editor de texto, escribe cualquier cosa, guarda los cambios y vuelve a ejecutar el programa. Observa
+cómo el resultado es diferente. Como curiosidad, fíjate en el uso de la clase Date para poder mostrar la
+fecha en un formato legible.El sistema de ficheros de un sistema operativo almacena diversidad de información sobre los archivos y
+carpetas que puede resultar útil conocer: sus atributos de acceso, su tamaño, la fecha de modificación,
+etc. En general, todos los datos mostrados en acceder a las propiedades del archivo. Esta información
+también   puede   ser   consultada   usando   los  métodos   adecuados.   Entre   los   más   populares  hay   los
+siguientes:
+•long length() devuelve el tamaño de un archivo en bytes. Este método solo puede ser llamado
+sobre una ruta que represente un archivo, de lo contrario no se puede garantizar que el resultado
+sea válido.
+•long lastModified() devuelve la última fecha de edición del elemento representado por esta ruta.
+El resultado se codifica en un único número entero cuyo valor es el número de milisegundos que
+han pasado desde el 1 de junio de 1970.
+El   ejemplo   siguiente   muestra   cómo   funcionan   estos   métodos.   Para   probarlos   crea   el   archivo
+“Documento.txt" en la carpeta "C:\Temp". Primero deja el archivo vacío y ejecuta el programa. Luego, con
+un editor de texto, escribe cualquier cosa, guarda los cambios y vuelve a ejecutar el programa. Observa
+cómo el resultado es diferente. Como curiosidad, fíjate en el uso de la clase Date para poder mostrar la
+fecha en un formato legible.El sistema de ficheros de un sistema operativo almacena diversidad de información sobre los archivos y
+carpetas que puede resultar útil conocer: sus atributos de acceso, su tamaño, la fecha de modificación,
+etc. En general, todos los datos mostrados en acceder a las propiedades del archivo. Esta información
+también   puede   ser   consultada   usando   los  métodos   adecuados.   Entre   los   más   populares  hay   los
+siguientes:
+•long length() devuelve el tamaño de un archivo en bytes. Este método solo puede ser llamado
+sobre una ruta que represente un archivo, de lo contrario no se puede garantizar que el resultado
+sea válido.
+•long lastModified() devuelve la última fecha de edición del elemento representado por esta ruta.
+El resultado se codifica en un único número entero cuyo valor es el número de milisegundos que
+han pasado desde el 1 de junio de 1970.
+El   ejemplo   siguiente   muestra   cómo   funcionan   estos   métodos.   Para   probarlos   crea   el   archivo
+“Documento.txt" en la carpeta "C:\Temp". Primero deja el archivo vacío y ejecuta el programa. Luego, con
+un editor de texto, escribe cualquier cosa, guarda los cambios y vuelve a ejecutar el programa. Observa
+cómo el resultado es diferente. Como curiosidad, fíjate en el uso de la clase Date para poder mostrar la
+fecha en un formato legible.El sistema de ficheros de un sistema operativo almacena diversidad de información sobre los archivos y
+carpetas que puede resultar útil conocer: sus atributos de acceso, su tamaño, la fecha de modificación,
+etc. En general, todos los datos mostrados en acceder a las propiedades del archivo. Esta información
+también   puede   ser   consultada   usando   los  métodos   adecuados.   Entre   los   más   populares  hay   los
+siguientes:
+•long length() devuelve el tamaño de un archivo en bytes. Este método solo puede ser llamado
+sobre una ruta que represente un archivo, de lo contrario no se puede garantizar que el resultado
+sea válido.
+•long lastModified() devuelve la última fecha de edición del elemento representado por esta ruta.
+El resultado se codifica en un único número entero cuyo valor es el número de milisegundos que
+han pasado desde el 1 de junio de 1970.
+El   ejemplo   siguiente   muestra   cómo   funcionan   estos   métodos.   Para   probarlos   crea   el   archivo
+“Documento.txt" en la carpeta "C:\Temp". Primero deja el archivo vacío y ejecuta el programa. Luego, con
+un editor de texto, escribe cualquier cosa, guarda los cambios y vuelve a ejecutar el programa. Observa
+cómo el resultado es diferente. Como curiosidad, fíjate en el uso de la clase Date para poder mostrar la
+fecha en un formato legible.El sistema de ficheros de un sistema operativo almacena diversidad de información sobre los archivos y
+carpetas que puede resultar útil conocer: sus atributos de acceso, su tamaño, la fecha de modificación,
+etc. En general, todos los datos mostrados en acceder a las propiedades del archivo. Esta información
+también   puede   ser   consultada   usando   los  métodos   adecuados.   Entre   los   más   populares  hay   los
+siguientes:
+•long length() devuelve el tamaño de un archivo en bytes. Este método solo puede ser llamado
+sobre una ruta que represente un archivo, de lo contrario no se puede garantizar que el resultado
+sea válido.
+•long lastModified() devuelve la última fecha de edición del elemento representado por esta ruta.
+El resultado se codifica en un único número entero cuyo valor es el número de milisegundos que
+han pasado desde el 1 de junio de 1970.
+El   ejemplo   siguiente   muestra   cómo   funcionan   estos   métodos.   Para   probarlos   crea   el   archivo
+“Documento.txt" en la carpeta "C:\Temp". Primero deja el archivo vacío y ejecuta el programa. Luego, con
+un editor de texto, escribe cualquier cosa, guarda los cambios y vuelve a ejecutar el programa. Observa
+cómo el resultado es diferente. Como curiosidad, fíjate en el uso de la clase Date para poder mostrar la
+fecha en un formato legible.El sistema de ficheros de un sistema operativo almacena diversidad de información sobre los archivos y
+carpetas que puede resultar útil conocer: sus atributos de acceso, su tamaño, la fecha de modificación,
+etc. En general, todos los datos mostrados en acceder a las propiedades del archivo. Esta información
+también   puede   ser   consultada   usando   los  métodos   adecuados.   Entre   los   más   populares  hay   los
+siguientes:
+•long length() devuelve el tamaño de un archivo en bytes. Este método solo puede ser llamado
+sobre una ruta que represente un archivo, de lo contrario no se puede garantizar que el resultado
+sea válido.
+•long lastModified() devuelve la última fecha de edición del elemento representado por esta ruta.
+El resultado se codifica en un único número entero cuyo valor es el número de milisegundos que
+han pasado desde el 1 de junio de 1970.
+El   ejemplo   siguiente   muestra   cómo   funcionan   estos   métodos.   Para   probarlos   crea   el   archivo
+“Documento.txt" en la carpeta "C:\Temp". Primero deja el archivo vacío y ejecuta el programa. Luego, con
+un editor de texto, escribe cualquier cosa, guarda los cambios y vuelve a ejecutar el programa. Observa
+cómo el resultado es diferente. Como curiosidad, fíjate en el uso de la clase Date para poder mostrar la
+fecha en un formato legible.El sistema de ficheros de un sistema operativo almacena diversidad de información sobre los archivos y
+carpetas que puede resultar útil conocer: sus atributos de acceso, su tamaño, la fecha de modificación,
+etc. En general, todos los datos mostrados en acceder a las propiedades del archivo. Esta información
+también   puede   ser   consultada   usando   los  métodos   adecuados.   Entre   los   más   populares  hay   los
+siguientes:
+•long length() devuelve el tamaño de un archivo en bytes. Este método solo puede ser llamado
+sobre una ruta que represente un archivo, de lo contrario no se puede garantizar que el resultado
+sea válido.
+•long lastModified() devuelve la última fecha de edición del elemento representado por esta ruta.
+El resultado se codifica en un único número entero cuyo valor es el número de milisegundos que
+han pasado desde el 1 de junio de 1970.
+El   ejemplo   siguiente   muestra   cómo   funcionan   estos   métodos.   Para   probarlos   crea   el   archivo
+“Documento.txt" en la carpeta "C:\Temp". Primero deja el archivo vacío y ejecuta el programa. Luego, con
+un editor de texto, escribe cualquier cosa, guarda los cambios y vuelve a ejecutar el programa. Observa
+cómo el resultado es diferente. Como curiosidad, fíjate en el uso de la clase Date para poder mostrar la
+fecha en un formato legible.El sistema de ficheros de un sistema operativo almacena diversidad de información sobre los archivos y
+carpetas que puede resultar útil conocer: sus atributos de acceso, su tamaño, la fecha de modificación,
+etc. En general, todos los datos mostrados en acceder a las propiedades del archivo. Esta información
+también   puede   ser   consultada   usando   los  métodos   adecuados.   Entre   los   más   populares  hay   los
+siguientes:
+•long length() devuelve el tamaño de un archivo en bytes. Este método solo puede ser llamado
+sobre una ruta que represente un archivo, de lo contrario no se puede garantizar que el resultado
+sea válido.
+•long lastModified() devuelve la última fecha de edición del elemento representado por esta ruta.
+El resultado se codifica en un único número entero cuyo valor es el número de milisegundos que
+han pasado desde el 1 de junio de 1970.
+El   ejemplo   siguiente   muestra   cómo   funcionan   estos   métodos.   Para   probarlos   crea   el   archivo
+“Documento.txt" en la carpeta "C:\Temp". Primero deja el archivo vacío y ejecuta el programa. Luego, con
+un editor de texto, escribe cualquier cosa, guarda los cambios y vuelve a ejecutar el programa. Observa
+cómo el resultado es diferente. Como curiosidad, fíjate en el uso de la clase Date para poder mostrar la
+fecha en un formato legible.El sistema de ficheros de un sistema operativo almacena diversidad de información sobre los archivos y
+carpetas que puede resultar útil conocer: sus atributos de acceso, su tamaño, la fecha de modificación,
+etc. En general, todos los datos mostrados en acceder a las propiedades del archivo. Esta información
+también   puede   ser   consultada   usando   los  métodos   adecuados.   Entre   los   más   populares  hay   los
+siguientes:
+•long length() devuelve el tamaño de un archivo en bytes. Este método solo puede ser llamado
+sobre una ruta que represente un archivo, de lo contrario no se puede garantizar que el resultado
+sea válido.
+•long lastModified() devuelve la última fecha de edición del elemento representado por esta ruta.
+El resultado se codifica en un único número entero cuyo valor es el número de milisegundos que
+han pasado desde el 1 de junio de 1970.
+El   ejemplo   siguiente   muestra   cómo   funcionan   estos   métodos.   Para   probarlos   crea   el   archivo
+“Documento.txt" en la carpeta "C:\Temp". Primero deja el archivo vacío y ejecuta el programa. Luego, con
+un editor de texto, escribe cualquier cosa, guarda los cambios y vuelve a ejecutar el programa. Observa
+cómo el resultado es diferente. Como curiosidad, fíjate en el uso de la clase Date para poder mostrar la
+fecha en un formato legible.El sistema de ficheros de un sistema operativo almacena diversidad de información sobre los archivos y
+carpetas que puede resultar útil conocer: sus atributos de acceso, su tamaño, la fecha de modificación,
+etc. En general, todos los datos mostrados en acceder a las propiedades del archivo. Esta información
+también   puede   ser   consultada   usando   los  métodos   adecuados.   Entre   los   más   populares  hay   los
+siguientes:
+•long length() devuelve el tamaño de un archivo en bytes. Este método solo puede ser llamado
+sobre una ruta que represente un archivo, de lo contrario no se puede garantizar que el resultado
+sea válido.
+•long lastModified() devuelve la última fecha de edición del elemento representado por esta ruta.
+El resultado se codifica en un único número entero cuyo valor es el número de milisegundos que
+han pasado desde el 1 de junio de 1970.
+El   ejemplo   siguiente   muestra   cómo   funcionan   estos   métodos.   Para   probarlos   crea   el   archivo
+“Documento.txt" en la carpeta "C:\Temp". Primero deja el archivo vacío y ejecuta el programa. Luego, con
+un editor de texto, escribe cualquier cosa, guarda los cambios y vuelve a ejecutar el programa. Observa
+cómo el resultado es diferente. Como curiosidad, fíjate en el uso de la clase Date para poder mostrar la
+fecha en un formato legible.El sistema de ficheros de un sistema operativo almacena diversidad de información sobre los archivos y
+carpetas que puede resultar útil conocer: sus atributos de acceso, su tamaño, la fecha de modificación,
+etc. En general, todos los datos mostrados en acceder a las propiedades del archivo. Esta información
+también   puede   ser   consultada   usando   los  métodos   adecuados.   Entre   los   más   populares  hay   los
+siguientes:
+•long length() devuelve el tamaño de un archivo en bytes. Este método solo puede ser llamado
+sobre una ruta que represente un archivo, de lo contrario no se puede garantizar que el resultado
+sea válido.
+•long lastModified() devuelve la última fecha de edición del elemento representado por esta ruta.
+El resultado se codifica en un único número entero cuyo valor es el número de milisegundos que
+han pasado desde el 1 de junio de 1970.
+El   ejemplo   siguiente   muestra   cómo   funcionan   estos   métodos.   Para   probarlos   crea   el   archivo
+“Documento.txt" en la carpeta "C:\Temp". Primero deja el archivo vacío y ejecuta el programa. Luego, con
+un editor de texto, escribe cualquier cosa, guarda los cambios y vuelve a ejecutar el programa. Observa
+cómo el resultado es diferente. Como curiosidad, fíjate en el uso de la clase Date para poder mostrar la
+fecha en un formato legible.El sistema de ficheros de un sistema operativo almacena diversidad de información sobre los archivos y
+carpetas que puede resultar útil conocer: sus atributos de acceso, su tamaño, la fecha de modificación,
+etc. En general, todos los datos mostrados en acceder a las propiedades del archivo. Esta información
+también   puede   ser   consultada   usando   los  métodos   adecuados.   Entre   los   más   populares  hay   los
+siguientes:
+•long length() devuelve el tamaño de un archivo en bytes. Este método solo puede ser llamado
+sobre una ruta que represente un archivo, de lo contrario no se puede garantizar que el resultado
+sea válido.
+•long lastModified() devuelve la última fecha de edición del elemento representado por esta ruta.
+El resultado se codifica en un único número entero cuyo valor es el número de milisegundos que
+han pasado desde el 1 de junio de 1970.
+El   ejemplo   siguiente   muestra   cómo   funcionan   estos   métodos.   Para   probarlos   crea   el   archivo
+“Documento.txt" en la carpeta "C:\Temp". Primero deja el archivo vacío y ejecuta el programa. Luego, con
+un editor de texto, escribe cualquier cosa, guarda los cambios y vuelve a ejecutar el programa. Observa
+cómo el resultado es diferente. Como curiosidad, fíjate en el uso de la clase Date para poder mostrar la
+fecha en un formato legible.
