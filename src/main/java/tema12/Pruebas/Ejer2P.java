@@ -1,4 +1,4 @@
-package tema12;
+package tema12.Pruebas;
 
 public class Ejer2P {
     //Enlace.
