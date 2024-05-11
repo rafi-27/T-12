@@ -9,15 +9,18 @@ public class probas {
 
         System.out.println("Contenido de "+dir.getAbsolutePath()+":");
 
+        // for (int i = 0; i < lista.length; i++) {
+        //     if (lista[i].isDirectory()) {
+        //         System.out.println("[DIR] "+lista[i].getName());
+        //     }else{
+        //         System.out.println("[FIC] "+lista[i].getName());
+        //     }
+        // }
+
+
         for (int i = 0; i < lista.length; i++) {
-            if (lista[i].isDirectory()) {
-                System.out.println("[DIR] "+lista[i].getName());
-            }else{
-                System.out.println("[FIC] "+lista[i].getName());
-            }
+            System.out.println(lista[i].listFiles().toString());
         }
-
-
 
 
 
