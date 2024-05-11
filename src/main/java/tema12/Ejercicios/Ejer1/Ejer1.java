@@ -5,26 +5,31 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Ejer1 {
-    
+
     // Metodo para mostrar info.
     public void muestraInfoRuta(File ruta) throws FileNotFoundException {
         File[] todo = ruta.listFiles();
+
         System.out.println("Directorio: [*] :: Archivo[A]");
+
         for (int i = 0; i < todo.length; i++) {
-            if (todo[i].isDirectory()) {
-                System.out.println("[*]"+todo[i].getName());
-            } 
-            //else if (todo[i].isFile()) {
-            //     System.out.println("[A]"+todo[i].getName());
-            // }
+            for (int j = 0; j < todo.length; j++) {
+                if (todo[i].isDirectory()) {
+                    System.out.println("[*]" + todo[i].getName());
+                    System.out.println("Contenido: "+todo[i].listFiles()[j].getName().toString());
+                }
+            }
+        }
+
+        for (int i = 0; i < todo.length; i++) {
             if (todo[i].isFile()) {
-                System.out.println("[A]"+todo[i].getName());
+                System.out.println("[A]" + todo[i].getName());
             }
         }
     }
-    
+
     public static void main(String[] args) {
-        //Ruta para realziar las pruebas: //src/main/java/tema12/Ejercicios/Documentos
+        // Ruta para realziar las pruebas: src/main/java/tema12/Ejercicios/Documentos
         Scanner sc = new Scanner(System.in);
         Ejer1 ejercicio = new Ejer1();
 
@@ -42,10 +47,10 @@ public class Ejer1 {
 
         } catch (FileNotFoundException ex) {
             System.out.println("La ruta no existe.");
-        } catch(Exception ex){
+        } catch (ArrayIndexOutOfBoundsException ex) {
             System.out.println("Ha dado otro tipo de excepcion.");
         }
 
-        //sc.close();
+        // sc.close();
     }
 }
