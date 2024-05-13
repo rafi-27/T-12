@@ -13,11 +13,11 @@ public class Ejer1 {
         System.out.println("Directorio: [*] :: Archivo[A]");
 
         for (int i = 0; i < todo.length; i++) {
-            for (int j = 0; j < todo.length; j++) {
-                if (todo[i].isDirectory()) {
-                    System.out.println("[*]" + todo[i].getName());
-                    System.out.println("Contenido: "+todo[i].listFiles()[j].getName().toString());
-                }
+           
+            if (todo[i].isDirectory()) {
+                //int tamaño = (int)todo[i].length();
+                System.out.println("[*]" + todo[i].getName());
+                muestraInfoRuta(todo[i]);
             }
         }
 
@@ -50,7 +50,8 @@ public class Ejer1 {
         } catch (ArrayIndexOutOfBoundsException ex) {
             System.out.println("Ha dado otro tipo de excepcion.");
         }
-
+     
+     
         // sc.close();
     }
 }
