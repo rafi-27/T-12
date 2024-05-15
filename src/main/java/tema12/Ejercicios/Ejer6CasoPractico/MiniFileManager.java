@@ -8,29 +8,14 @@ public class MiniFileManager {
         System.out.println(f.getAbsolutePath());
     }
 
-    // void cd(File f,String ruta){
-    //     File nuevaRuta = new File(f,ruta);
-    //     if (nuevaRuta.isDirectory()) {
-    //         f=nuevaRuta;
-    //     }else{
-    //         System.err.println("Ruta no valida pa");
-    //     }
-    // }
-    
-    File cd(File currentDirectory, String ruta) {
-        File nuevaRuta = new File(currentDirectory, ruta);
-        
+    void cd(File f,String ruta){
+        File nuevaRuta = new File(f,ruta);
         if (nuevaRuta.isDirectory()) {
-            // Si la nueva ruta es un directorio válido, devuelve la nueva ruta
-            System.out.println("Directorio cambiado a: " + nuevaRuta.getAbsolutePath());
-            return nuevaRuta;
-        } else {
-            System.err.println("Ruta no válida");
-            return currentDirectory; // Devuelve el directorio actual si la ruta no es válida
+            f=nuevaRuta;
+        }else{
+            System.err.println("Ruta no valida pa");
         }
     }
-    
-    
 
     void ls(File f){
         File[] listaP = f.listFiles();

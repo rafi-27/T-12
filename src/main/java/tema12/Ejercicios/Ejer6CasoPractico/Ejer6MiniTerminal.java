@@ -17,20 +17,12 @@ public class Ejer6MiniTerminal {
             if (entrada.startsWith("pwd")) {
                 mn.getpwd(acrhivoP);
             } else if (entrada.startsWith("cd")) {
-                // int primerEspacio = entrada.indexOf(" ");
-                // String ruta = entrada.substring(primerEspacio, entrada.length());
-                // acrhivoP = new File(acrhivoP.getParent(), ruta);
-
-                // mn.cd(acrhivoP, ruta);
-
                 int primerEspacio = entrada.indexOf(" ");
-    if (primerEspacio != -1) {
-        String ruta = entrada.substring(primerEspacio + 1).trim(); // Obtiene la parte después del primer espacio
-        acrhivoP = mn.cd(acrhivoP, ruta); // Actualiza el directorio actual
-    } else {
-        System.err.println("Comando 'cd' malformado");
-    }
+                String ruta = entrada.substring(primerEspacio, entrada.length());
+                acrhivoP = new File(acrhivoP.getParent(), ruta);
 
+                mn.cd(acrhivoP, ruta);
+                
             } else if (entrada.startsWith("ls")) {
                 mn.ls(acrhivoP);
             } else if (entrada.startsWith("ll")) {
