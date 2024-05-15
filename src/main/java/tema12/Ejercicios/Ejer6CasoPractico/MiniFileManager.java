@@ -8,14 +8,14 @@ public class MiniFileManager {
         System.out.println(f.getAbsolutePath());
     }
 
-    void cd(File f,String ruta){
-        File nuevaRuta = new File(f,ruta);
-        if (nuevaRuta.isDirectory()) {
-            f=nuevaRuta;
-        }else{
-            System.err.println("Ruta no valida pa");
-        }
-    }
+    // void cd(File f,String ruta){
+    //     File nuevaRuta = new File(f,ruta);
+    //     if (nuevaRuta.isDirectory()) {
+    //         f=nuevaRuta;
+    //     }else{
+    //         System.err.println("Ruta no valida pa");
+    //     }
+    // }
 
     void ls(File f){
         File[] listaP = f.listFiles();
