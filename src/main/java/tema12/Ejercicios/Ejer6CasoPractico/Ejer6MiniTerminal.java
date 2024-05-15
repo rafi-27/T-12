@@ -1,34 +1,53 @@
 package tema12.Ejercicios.Ejer6CasoPractico;
 
+import java.io.File;
 import java.util.Scanner;
 
 public class Ejer6MiniTerminal {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         while (true) {
+            MiniFileManager mn = new MiniFileManager();
+            File acrhivoP = new File(".");
+
             System.out.println("[Comando]-[Sentencia]");
-            String entrada=sc.nextLine();
+            String entrada = sc.nextLine();
 
-            if (entrada.equalsIgnoreCase("pwd")) {
-                MiniFileManager mn = new MiniFileManager();
-                mn.getpwd();
-            }else if (entrada.equalsIgnoreCase("ls")) {
-                
-            }else if (entrada.equalsIgnoreCase("ll")) {
-                
-            }else if (entrada.equalsIgnoreCase("help")) {
-                
-            }else if (entrada.equalsIgnoreCase("exit")) {
-                
+            if (entrada.startsWith("pwd")) {
+                mn.getpwd(acrhivoP);
+            } else if (entrada.startsWith("cd")) {
+                // int primerEspacio = entrada.indexOf(" ");
+                // String ruta = entrada.substring(primerEspacio, entrada.length());
+                // acrhivoP = new File(acrhivoP.getParent(), ruta);
+
+                // mn.cd(acrhivoP, ruta);
+
+                int primerEspacio = entrada.indexOf(" ");
+    if (primerEspacio != -1) {
+        String ruta = entrada.substring(primerEspacio + 1).trim(); // Obtiene la parte después del primer espacio
+        acrhivoP = mn.cd(acrhivoP, ruta); // Actualiza el directorio actual
+    } else {
+        System.err.println("Comando 'cd' malformado");
+    }
+
+            } else if (entrada.startsWith("ls")) {
+                mn.ls(acrhivoP);
+            } else if (entrada.startsWith("ll")) {
+                mn.ll(acrhivoP);
+            } else if (entrada.equalsIgnoreCase("mkdir")) {
+                mn.mkdir(acrhivoP);
+            } else if (entrada.startsWith("rm")) {
+                mn.rm(acrhivoP);
+            } else if (entrada.startsWith("mv")) {
+
+            } else if (entrada.startsWith("exit")) {
+                mn.exit();
+            } else if (entrada.startsWith("help")) {
+                mn.help();
+            } else {
+                System.err.println("Comando no encontrado.");
             }
-
-            //Comando la palabra mas larga de los comandos es de 5 caracteres.
-            int primerEspacio = entrada.indexOf(" ");
-            String comando = entrada.substring(0,primerEspacio);
-
-            System.out.println(comando);
-
-
         }
     }
 }
