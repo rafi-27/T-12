@@ -1,4 +1,4 @@
-package tema12.Ejercicios.Ejer6CasoPractico;
+package tema12.EjerciciosA.Ejer6CasoPractico;
 
 import java.io.File;
 import java.util.Scanner;
@@ -21,7 +21,7 @@ public class Ejer6MiniTerminal {
                 String ruta = entrada.substring(primerEspacio, entrada.length());
                 acrhivoP = new File(acrhivoP.getParent(), ruta);
 
-                mn.cd(acrhivoP, ruta);
+                //mn.cd(acrhivoP, ruta);
                 
             } else if (entrada.startsWith("ls")) {
                 mn.ls(acrhivoP);

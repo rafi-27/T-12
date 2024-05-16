@@ -1,4 +1,4 @@
-package tema12.Ejercicios.Ejer4;
+package tema12.EjerciciosA.Ejer4;
 
 import java.io.File;
 import java.io.IOException;

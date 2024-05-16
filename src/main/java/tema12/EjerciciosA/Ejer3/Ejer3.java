@@ -1,4 +1,4 @@
-package tema12.Ejercicios.Ejer3;
+package tema12.EjerciciosA.Ejer3;
 
 import java.io.File;
 

@@ -1,4 +1,4 @@
-package tema12.Ejercicios.Ejer6CasoPractico;
+package tema12.EjerciciosA.Ejer6CasoPractico;
 
 import java.io.File;
 import java.sql.Date;

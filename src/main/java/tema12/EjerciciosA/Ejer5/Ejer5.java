@@ -1,4 +1,4 @@
-package tema12.Ejercicios.Ejer5;
+package tema12.EjerciciosA.Ejer5;
 
 import java.io.File;
 import java.io.FileNotFoundException;
