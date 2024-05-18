@@ -4,18 +4,29 @@ import java.io.File;
 import java.sql.Date;
 
 public class MiniFileManager {
+    
+    public MiniFileManager(){
+
+    }
+
     void getpwd(File f){
         System.out.println(f.getAbsolutePath());
     }
 
-    // void cd(File f,String ruta){
-    //     File nuevaRuta = new File(f,ruta);
-    //     if (nuevaRuta.isDirectory()) {
-    //         f=nuevaRuta;
-    //     }else{
-    //         System.err.println("Ruta no valida pa");
-    //     }
-    // }
+    File cd(File f,String ruta){
+        File nuevaRuta;
+        if (ruta.equals("..")) {
+            nuevaRuta=f.getParentFile();
+        }else{
+            nuevaRuta = new File(f,ruta);
+        }
+
+        if (nuevaRuta.isDirectory()) {
+            return nuevaRuta;
+        }else{
+            return f;
+        }
+    }
 
     void ls(File f){
         File[] listaP = f.listFiles();
@@ -41,14 +52,8 @@ public class MiniFileManager {
         }
     }
 
-    void mkdir(File f){
-        if (f.exists() && f.isFile()) {
-            System.out.println("El archivo ya existe.");
-        }else if (f.exists() && f.isDirectory()) {
-            System.out.println("Ya existe el directorio.");
-        }else{
-            f.mkdir();
-        }
+    boolean mkdir(File f,String nombreCarpeta){
+        return new File(f,nombreCarpeta).mkdir();
     }
 
     void rm(File f){
@@ -62,8 +67,19 @@ public class MiniFileManager {
         }
     }
 
-    void mv(File f){
-
+    void mv(String rutaUno,String rutaDos){
+        File origen=new File(rutaUno);
+        File destino=new File(rutaDos);
+        if (destino.exists() && destino.isDirectory()) {
+            // Si es un directorio, agregar el nombre del archivo al destino
+            destino = new File(destino, origen.getName());
+        }
+        
+        if (origen.renameTo(destino)) {
+            System.out.println("Movido con exito.");
+        }else{
+            System.out.println("No se ha podido mover.");
+        }
     }
 
     void help(){
@@ -73,7 +89,7 @@ public class MiniFileManager {
         System.out.println("ll: lo mismo que ls pero añadiendo el peso y fecha de la ultima modificacion.");
         System.out.println("mkdir <name>: crea una carpeta.");
         System.out.println("rm <name>: borra la carpeta o archivo que se le pasa.");
-        System.out.println("mv <ruta1> <ruta2>: mueve ruta1 a ruta2.");
+        System.out.println("mv <ruta1> <ruta2>: mueve ruta1 a ruta2 o cambia el nombre.");
         System.out.println("exit: salir");
     }
 
