@@ -71,10 +71,8 @@ public class MiniFileManager {
         File origen=new File(rutaUno);
         File destino=new File(rutaDos);
         if (destino.exists() && destino.isDirectory()) {
-            // Si es un directorio, agregar el nombre del archivo al destino
             destino = new File(destino, origen.getName());
         }
-        
         if (origen.renameTo(destino)) {
             System.out.println("Movido con exito.");
         }else{

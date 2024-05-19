@@ -49,6 +49,9 @@ public class Ejer6MiniTerminal {
                 }else{
                     System.err.println("Comando invalido");
                 }
+                //----------------------------//
+                System.out.println("O: "+partes[1]);
+                System.out.println("D: "+partes[2]);
             } else if (entrada.startsWith("exit")) {
                 sigue = false;
                 mn.exit();
