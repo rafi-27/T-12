@@ -3,6 +3,7 @@ package tema12.EjerciciosB.Ejer5;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -26,37 +27,31 @@ public class Ejer5 {
 
         File mkdirdicionario = new
         File("src/main/java/tema12/EjerciciosB/Diccionario");
-        
+
         if (mkdirdicionario.mkdir()) {
         System.out.println("Creada.");
         }
         for (int i = 0; i < letras.length(); i++) {
-        File nuevoLetra = new
-        File("src/main/java/tema12/EjerciciosB/Diccionario/"+letras.charAt(i)+".txt");
+        File nuevoLetra = new File("src/main/java/tema12/EjerciciosB/Diccionario/" +
+        letras.charAt(i) + ".txt");
         nuevoLetra.createNewFile();
         }
 
         // ---------------------------------------Hecho---------------------------------//
 
-        // ArrayList<String> lista = new ArrayList<>();
-        // String cadena;
-        // try {
-        //     BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("src/main/java/tema12/EjerciciosB/Documentos/diccionario.txt"), "UTF-8"));
-        //     File dicionario = new File("src/main/java/tema12/EjerciciosB/Documentos/diccionario.txt");
-        //     FileInputStream fis = new FileInputStream(dicionario);
-        //     InputStreamReader isr = new InputStreamReader(fis, "UTF-8");
-        //     BufferedReader bfr = new BufferedReader(isr);
+        String cadena;
+        File dicion = new File("src/main/java/tema12/EjerciciosB/Documentos/diccionario.txt");
+        try (BufferedReader bfr = new BufferedReader(new FileReader(dicion))){
 
-        //     while ((cadena = bfr.readLine()) != null){
-        //         lista.add(cadena);
-                
-        //     PrintWriter fescribe = new PrintWriter("src/main/java/tema12/EjerciciosB/Diccionario/"+cadena.toLowerCase().charAt(0)+".txt");
-        //     fescribe.write(cadena);
-        //     fescribe.close();
-        //     }
-
-        // } catch (Exception ex) {
-        //     System.out.println("Algo fallo.");
-        // }
+            while ((cadena = bfr.readLine()) != null) {
+                Character letra = Character.toLowerCase(cadena.charAt(0));
+            File n = new File("src/main/java/tema12/EjerciciosB/Diccionario/"+letra+".txt");
+            FileWriter fescribe = new FileWriter(n,true);
+            fescribe.write(cadena+"\n");
+            fescribe.close();
+        }
+        } catch (Exception ex) {
+            System.out.println("Algo fallo.");
+        }
     }
 }
