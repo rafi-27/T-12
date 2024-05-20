@@ -41,7 +41,8 @@ public class Ejer6MiniTerminal {
                 }
             } else if (partes[0].equalsIgnoreCase("rm")) {
                 if (partes.length==2) {
-                    mn.rm(acrhivoP,partes[1]);
+                    if(!mn.rm(acrhivoP,partes[1])) System.out.println("Ruta incorrecta");
+                    else System.out.println("Ruta correcta");
                 }else{
                     System.out.println("Ruta incorrecta.");
                 }
