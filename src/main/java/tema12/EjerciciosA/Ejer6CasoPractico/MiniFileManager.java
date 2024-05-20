@@ -64,6 +64,7 @@ public class MiniFileManager {
             for (int i = 0; i < lispaFiles.length; i++) {
                 lispaFiles[i].delete();
             }
+            f.delete();
         }
     }
 

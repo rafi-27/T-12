@@ -15,24 +15,23 @@ public class Ejer6MiniTerminal {
         do {
             System.out.println("[Comando]-[Sentencia]");
             String entrada = sc.nextLine();
+            String[] partes = entrada.split(" ");
 
-            if (entrada.startsWith("pwd")) {
+            if (partes[0].equalsIgnoreCase("pwd")) {
                 mn.getpwd(acrhivoP);
-            } else if (entrada.startsWith("cd")) {
-                String[] ruta = entrada.split(" ");
-                if (ruta.length<=1) {
+            } else if (partes[0].equalsIgnoreCase("cd")) {
+                if (partes.length<=1) {
                     System.out.println("Ruta no completa");
                 }else{
-                acrhivoP = mn.cd(acrhivoP, ruta[1]);
+                acrhivoP = mn.cd(acrhivoP, partes[1]);
                 }
-            } else if (entrada.startsWith("ls")) {
+            } else if (partes[0].equalsIgnoreCase("ls")) {
                 mn.ls(acrhivoP);
-            } else if (entrada.startsWith("ll")) {
+            } else if (partes[0].equalsIgnoreCase("ll")) {
                 mn.ll(acrhivoP);
-            } else if (entrada.startsWith("mkdir")) {
-                String[] ruta = entrada.split(" ");
-                if (ruta.length==2) {
-                    if (mn.mkdir(acrhivoP,ruta[1])) {
+            } else if (partes[0].equalsIgnoreCase("mkdir")) {
+                if (partes.length==2) {
+                    if (mn.mkdir(acrhivoP,partes[1])) {
                         System.out.println("Carpeta creada con exito.");
                     }else{
                         System.out.println("Fallo al crear la carpeta.");
@@ -40,10 +39,9 @@ public class Ejer6MiniTerminal {
                 }else{
                     System.out.println("Comando invalido");
                 }
-            } else if (entrada.startsWith("rm")) {
+            } else if (partes[0].equalsIgnoreCase("rm")) {
                 mn.rm(acrhivoP);
-            } else if (entrada.startsWith("mv")) {
-                String[] partes = entrada.split(" ");
+            } else if (partes[0].equalsIgnoreCase("mv")) {
                 if (partes.length==3) {
                     mn.mv(partes[1],partes[2]);
                 }else{
@@ -52,10 +50,10 @@ public class Ejer6MiniTerminal {
                 //----------------------------//
                 System.out.println("O: "+partes[1]);
                 System.out.println("D: "+partes[2]);
-            } else if (entrada.startsWith("exit")) {
+            } else if (partes[0].equalsIgnoreCase("exit")) {
                 sigue = false;
                 mn.exit();
-            } else if (entrada.startsWith("help")) {
+            } else if (partes[0].equalsIgnoreCase("help")) {
                 mn.help();
             } else {
                 System.err.println("Comando no encontrado.");
