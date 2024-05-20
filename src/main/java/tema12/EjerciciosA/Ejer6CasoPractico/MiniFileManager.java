@@ -5,10 +5,6 @@ import java.sql.Date;
 
 public class MiniFileManager {
     
-    public MiniFileManager(){
-
-    }
-
     void getpwd(File f){
         System.out.println(f.getAbsolutePath());
     }

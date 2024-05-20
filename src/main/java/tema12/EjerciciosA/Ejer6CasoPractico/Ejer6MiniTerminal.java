@@ -40,7 +40,12 @@ public class Ejer6MiniTerminal {
                     System.out.println("Comando invalido");
                 }
             } else if (partes[0].equalsIgnoreCase("rm")) {
-                mn.rm(acrhivoP);
+                if (partes.length==2) {
+                    mn.rm(acrhivoP,partes[1]);
+                }else{
+                    System.out.println("Ruta incorrecta.");
+                }
+                
             } else if (partes[0].equalsIgnoreCase("mv")) {
                 if (partes.length==3) {
                     mn.mv(partes[1],partes[2]);
