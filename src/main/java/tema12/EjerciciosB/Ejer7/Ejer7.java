@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Hashtable;
 import java.util.Scanner;
 
@@ -68,6 +69,7 @@ public class Ejer7 {
                 System.out.println("Palabra: " + palabra + ", Conteo: " + contenedor.get(palabra));
             }
 
+            //Collections.sort(contenedor);
         } catch (Exception e) {
             System.err.println("Algo ha fallado.");
         }
