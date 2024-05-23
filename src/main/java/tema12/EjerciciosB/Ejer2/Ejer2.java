@@ -25,6 +25,7 @@ public class Ejer2 {
                     listaNumeros.add(numero);
                     media += Double.parseDouble(partes[i]);
                 }
+                System.out.println("Partes:"+partes.length);
                 Collections.sort(listaNumeros,(n1,n2)->n2-n1);
                 media /= partes.length - 2;
                 //listaNumeros.stream().forEach(System.out::println);
