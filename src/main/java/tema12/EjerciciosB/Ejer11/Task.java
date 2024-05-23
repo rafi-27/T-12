@@ -1,24 +1,20 @@
 package tema12.EjerciciosB.Ejer11;
 
 public class Task {
-    private int id;
+    private final int id;
     private String description;
-    private int priority;
+    private int priority;//(1 para alta, 2 para media, 3 para baja)
     boolean completed;
     
     public Task(int id, String description, int priority, boolean completed) {
         this.id = id;
         this.description = description;
-        this.priority = priority;
+        setPriority(priority);
         this.completed = completed;
     }
 
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getDescription() {
@@ -34,7 +30,11 @@ public class Task {
     }
 
     public void setPriority(int priority) {
-        this.priority = priority;
+        if (priority>=1&&priority<=3) {
+            this.priority=priority;
+        }else{
+            this.priority=3;
+        }
     }
 
     public boolean isCompleted() {
