@@ -36,38 +36,39 @@ public class Ejer5 {
         }
 
         // ---------------------------------------Hecho---------------------------------//
-        String cadena;
-        File dicion = new File("src/main/java/tema12/EjerciciosB/Documentos/diccionario.txt");
-
-        for (int i = 0; i < letras.length(); i++) {
-            File f = new File("src/main/java/tema12/EjerciciosB/Diccionario/" + letras.charAt(i) + ".txt");
-            try (BufferedReader bfr = new BufferedReader(new FileReader(dicion));
-                 BufferedWriter bfw = new BufferedWriter(new FileWriter(f, true))) {
-
-                while ((cadena = bfr.readLine()) != null) {
-                    if (cadena.startsWith(String.valueOf(letras.charAt(i)))) {
-                        bfw.write(cadena + "\n");
-                    }
-                }
-            } catch (IOException e) {
-                System.err.println("Error procesando el archivo " + f.getName() + ": " + e.getMessage());
-            }
-        }
         // String cadena;
-        // File dicion = new
-        // File("src/main/java/tema12/EjerciciosB/Documentos/diccionario.txt");
-        // try (BufferedReader bfr = new BufferedReader(new FileReader(dicion))) {
+        // File dicion = new File("src/main/java/tema12/EjerciciosB/Documentos/diccionario.txt");
 
-        // while ((cadena = bfr.readLine()) != null) {
-        // Character letra = Character.toLowerCase(cadena.charAt(0));
-        // File n = new File("src/main/java/tema12/EjerciciosB/Diccionario/" + letra +
-        // ".txt");
-        // FileWriter fescribe = new FileWriter(n, true);
-        // fescribe.write(cadena + "\n");
-        // fescribe.close();
+        // for (int i = 0; i < letras.length(); i++) {
+        //     File f = new File("src/main/java/tema12/EjerciciosB/Diccionario/" + letras.charAt(i) + ".txt");
+        //     try (BufferedReader bfr = new BufferedReader(new FileReader(dicion));
+        //          BufferedWriter bfw = new BufferedWriter(new FileWriter(f, true))) {
+
+        //         while ((cadena = bfr.readLine()) != null) {
+        //             if (cadena.startsWith(String.valueOf(letras.charAt(i)))) {
+        //                 bfw.write(cadena + "\n");
+        //             }
+        //         }
+        //     } catch (IOException e) {
+        //         System.err.println("Error procesando el archivo " + f.getName() + ": " + e.getMessage());
+        //     }
         // }
-        // } catch (Exception ex) {
-        // System.out.println("Algo fallo.");
-        // }
+
+        String cadena;
+        File dicion = new
+        File("src/main/java/tema12/EjerciciosB/Documentos/diccionario.txt");
+        try (BufferedReader bfr = new BufferedReader(new FileReader(dicion))) {
+
+        while ((cadena = bfr.readLine()) != null) {
+        Character letra = Character.toLowerCase(cadena.charAt(0));
+        File n = new File("src/main/java/tema12/EjerciciosB/Diccionario/" + letra +
+        ".txt");
+        FileWriter fescribe = new FileWriter(n, true);
+        fescribe.write(cadena + "\n");
+        fescribe.close();
+        }
+        } catch (Exception ex) {
+        System.out.println("Algo fallo.");
+        }
     }
 }

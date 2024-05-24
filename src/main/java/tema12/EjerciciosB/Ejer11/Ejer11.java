@@ -11,9 +11,10 @@ public class Ejer11 {
         //manager.getTask(1);
         //manager.getTasks();
 
-        //manager.saveTasksToFile("datos");
+        manager.saveTasksToFile("datos");
+        manager.saveTasksToFile("datos2");
 
-        manager.loadTasksFromFile("datos2.json");
+        //manager.loadTasksFromFile("datos.json");
 
 
 
