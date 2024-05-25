@@ -1,1 +1,1 @@
-{"map":{"Descripcion: ":{"myArrayList":["Primera","Segunda","Tercera","Cuarta"]},"ID: ":{"myArrayList":[0,1,2,3]},"Esta completa: ":{"myArrayList":[false,false,true,true]},"Prioridad(1-3): ":{"myArrayList":[2,3,1,3]}}}
+{" 0":" 0 Primera 2 false"," 1":" 1 Segunda 3 false"," 2":" 2 Tercera 1 true"," 3":" 3 Cuarta 3 true"}
