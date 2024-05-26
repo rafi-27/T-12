@@ -1,1 +1,1 @@
-{" 0":" 0 Primera 2 false"," 1":" 1 Segunda 3 false"," 2":" 2 Tercera 1 true"," 3":" 3 Cuarta 3 true"}
+{"[ID: 0]":" Desc: Primera Prior: 2 is completed: false","[ID: 1]":" Desc: Segunda Prior: 3 is completed: false","[ID: 2]":" Desc: Tercera Prior: 1 is completed: true","[ID: 3]":" Desc: Quinta Prior: 1 is completed: true"}

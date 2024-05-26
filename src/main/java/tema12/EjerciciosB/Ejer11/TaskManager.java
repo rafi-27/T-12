@@ -55,23 +55,8 @@ public class TaskManager {
         JSONObject oJsonObject = new JSONObject();
 
         for (Task task : listaTareas) {
-            objeto1.addProperty(String.valueOf(" "+task.getId())," "+task.getId()+" "+task.getDescription()+" "+task.getPriority()+" "+task.isCompleted());
+            objeto1.addProperty(String.valueOf("[ID: "+task.getId())+"]"," Desc: "+task.getDescription()+" Prior: "+task.getPriority()+" is completed: "+task.isCompleted());
         }
-
-        // for (int i = 0; i < listaTareas.size(); i++) {
-        //     oJsonObject.append("ID: ", listaTareas.get(i).getId());
-        //     oJsonObject.append("Descripcion: ", listaTareas.get(i).getDescription());
-        //     oJsonObject.append("Prioridad(1-3): ", listaTareas.get(i).getPriority());
-        //     oJsonObject.append("Esta completa: ",listaTareas.get(i).isCompleted());
-        // }
-
-        // //Dos formas de reazliar esta tarea.
-        // for (int i = 0; i < listaTareas.size(); i++) {
-        //     objeto1.addProperty("ID: ", listaTareas.get(i).getId());
-        //     objeto1.addProperty("Descripcion: ", listaTareas.get(i).getDescription());
-        //     objeto1.addProperty("Prioridad(1-3): ", listaTareas.get(i).getPriority());
-        //     objeto1.addProperty("Esta completa: ",listaTareas.get(i).isCompleted());
-        // }
 
         String json = new Gson().toJson(objeto1);
         String json2 = new Gson().toJson(oJsonObject);

@@ -79,43 +79,5 @@ public class Ejer7 {
         } catch (Exception e) {
             System.err.println("Algo ha fallado.");
         }
-        /**
-         * 
-         * for (int i = 0; i < palabrasTotales.length; i++) {
-         * if (palabrasTotales[i].contains(".")) {
-         * palabrasTotales[i].replace(".","");
-         * }
-         * if (palabrasTotales[i].contains(",")) {
-         * palabrasTotales[i].replace(",","");
-         * }
-         * if (palabrasTotales[i].contains("!")) {
-         * palabrasTotales[i].replace("!","");
-         * }
-         * if (palabrasTotales[i].contains(";")) {
-         * palabrasTotales[i].replace(";","");
-         * }
-         * if (palabrasTotales[i].contains(".")) {
-         * palabrasTotales[i].replace(".","");
-         * }
-         * if (palabrasTotales[i].contains(":")) {
-         * palabrasTotales[i].replace(":","");
-         * }
-         * if (palabrasTotales[i].contains("-")) {
-         * palabrasTotales[i].replace("-","");
-         * }
-         * if (palabrasTotales[i].contains("/")) {
-         * palabrasTotales[i].replace("/","");
-         * }
-         * if (palabrasTotales[i].contains("¿")) {
-         * palabrasTotales[i].replace("¿","");
-         * }
-         * if (palabrasTotales[i].contains("?")) {
-         * palabrasTotales[i].replace("?","");
-         * }
-         * if (palabrasTotales[i].contains("¡")) {
-         * palabrasTotales[i].replace("¡","");
-         * }
-         * }
-         */
     }
 }
