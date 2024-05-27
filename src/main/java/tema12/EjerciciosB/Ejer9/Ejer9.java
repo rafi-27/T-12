@@ -31,6 +31,10 @@ public class Ejer9 {
                 }
             }
             
+            for (Persona element : listaPersonas) {
+                element.imprime();
+            }
+
             try (FileOutputStream fos = new FileOutputStream("src/main/java/tema12/EjerciciosB/Documentos/datos_veintes.ser", false);
             BufferedOutputStream bos = new BufferedOutputStream(fos);
             ObjectOutputStream oos = new ObjectOutputStream(bos)){
