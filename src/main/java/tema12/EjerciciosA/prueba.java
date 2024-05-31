@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Scanner;
 
+
 public class prueba {
 /**
  * Clase MiniTerminal: Clase principal (con función main) que se encargará de

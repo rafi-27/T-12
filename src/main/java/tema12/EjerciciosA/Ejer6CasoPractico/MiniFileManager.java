@@ -90,9 +90,8 @@ public class MiniFileManager {
                     return arvhivoAborrar.delete();
                 }
             }
-        }
-        else{
-            File aux = new File(archivo,f);
+        } else {
+            File aux = new File(archivo, f);
             if (aux.isDirectory()) {
                 for (File arc : aux.listFiles()) {
                     if (arc.isFile()) {
@@ -122,6 +121,19 @@ public class MiniFileManager {
         }
     }
 
+    /**
+     * mv prueba.java /Ejer6CasoPractico
+     * No se ha podido mover.
+     * O: prueba.java
+     * D: /Ejer6CasoPractico
+     * [Comando]-[Sentencia]
+     * mv src/main/java/tema12/EjerciciosA/prueba.java
+     * src/main/java/tema12/EjerciciosA/Ejer6CasoPractico
+     * Movido con exito.
+     * O: src/main/java/tema12/EjerciciosA/prueba.java
+     * D: src/main/java/tema12/EjerciciosA/Ejer6CasoPractico
+     */
+    
     void help() {
         System.out.println("pwd: muestra la ruta actual.");
         System.out.println("cd <DIR>: te mueves a la ruta que le especificas.");
