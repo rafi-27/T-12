@@ -10,11 +10,11 @@ public class Ejer11 {
         manager.addTask(new Task(3, "Quinta",1, true));
 
         //manager.getTask(3);
-        manager.getTasks();
+        //manager.getTasks();
 
-        manager.saveTasksToFile("datos");
-        manager.saveTasksToFile("datos2");
+        //manager.saveTasksToFile("datos.json");
+        //manager.saveTasksToFile("datos2");
 
-        //manager.loadTasksFromFile("datos.json");
+        manager.loadTasksFromFile("datos.json");
     }
 }

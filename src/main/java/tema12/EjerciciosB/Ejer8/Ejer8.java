@@ -31,27 +31,42 @@ public class Ejer8 {
                 listaPersonas.put(dni, new Persona(dni, nombre, apellidos, edad));
             }
 
-            FileOutputStream fos = new FileOutputStream("src/main/java/tema12/EjerciciosB/Documentos/datos_junilados.csv",true);
-            OutputStreamWriter osw = new OutputStreamWriter(fos,"UTF-8");
-            BufferedWriter nuevoCSV = new BufferedWriter(osw);
-            
-            for (Map.Entry<String, Persona> persona: listaPersonas.entrySet()) {
-                String dni = persona.getKey();
-                Persona valor = persona.getValue();
-                String nombre = valor.getNombre();
-                String apellido = valor.getApellidos();
-                int edad = valor.getEdad();
-                
-                if (valor.esJubilado()) {
-                    nuevoCSV.write(dni+";"+nombre+";"+apellido+";"+edad+"\n");
+            try (BufferedWriter escribe = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("src/main/java/tema12/EjerciciosB/Documentos/datos_jubilados.csv"),"UTF-8"))) {
+                for (Map.Entry<String, Persona> persona: listaPersonas.entrySet()) {
+                    String dni = persona.getKey();
+                    Persona valor = persona.getValue();
+                    String nombre = valor.getNombre();
+                    String apellido = valor.getApellidos();
+                    int edad = valor.getEdad();
+                    
+                    if (valor.esJubilado()) {
+                        escribe.write(dni+";"+nombre+";"+apellido+";"+edad+"\n");
+                    }
                 }
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-            nuevoCSV.close();
+            // FileOutputStream fos = new FileOutputStream("src/main/java/tema12/EjerciciosB/Documentos/datos_junilados.csv");
+            // OutputStreamWriter osw = new OutputStreamWriter(fos,"UTF-8");
+            // BufferedWriter nuevoCSV = new BufferedWriter(osw);
+            
+            // for (Map.Entry<String, Persona> persona: listaPersonas.entrySet()) {
+            //     String dni = persona.getKey();
+            //     Persona valor = persona.getValue();
+            //     String nombre = valor.getNombre();
+            //     String apellido = valor.getApellidos();
+            //     int edad = valor.getEdad();
+                
+            //     if (valor.esJubilado()) {
+            //         nuevoCSV.write(dni+";"+nombre+";"+apellido+";"+edad+"\n");
+            //     }
+            // }
+            // nuevoCSV.close();
 
             //Buscar usuarios con bucle infinito hasta que se introduzca 'fin';
 
             while (true) {
-                System.out.println("Introduce el dni a buscar: ");
+                System.out.println("Introduce el dni a buscar o fin para terminar: ");
                 String entradaDNI = sc.nextLine();
 
                 if (entradaDNI.equalsIgnoreCase("fin")) {

@@ -1,9 +1,12 @@
 package tema12.EjerciciosB.Ejer11;
 
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import com.google.gson.reflect.TypeToken;
+import java.lang.reflect.Type;
 
 import org.json.JSONObject;
 
@@ -48,46 +51,67 @@ public class TaskManager {
 
     //guarda la lista de tareas en un archivo JSON con el nombre especificado.
     //Hay que usar Gson, Jackson
-    void saveTasksToFile(String fileName){
-        Gson gson = new Gson();
+    // void saveTasksToFile(String fileName){
+    //     Gson gson = new Gson();
 
-        JsonObject objeto1 = new JsonObject();
-        JSONObject oJsonObject = new JSONObject();
+    //     JsonObject objeto1 = new JsonObject();
+    //     JSONObject oJsonObject = new JSONObject();
 
-        for (Task task : listaTareas) {
-            objeto1.addProperty(String.valueOf("[ID: "+task.getId())+"]"," Desc: "+task.getDescription()+" Prior: "+task.getPriority()+" is completed: "+task.isCompleted());
-        }
+    //     for (Task task : listaTareas) {
+    //         objeto1.addProperty(String.valueOf("[ID: "+task.getId())+"]"," Desc: "+task.getDescription()+" Prior: "+task.getPriority()+" is completed: "+task.isCompleted());
+    //     }
 
-        String json = new Gson().toJson(objeto1);
-        String json2 = new Gson().toJson(oJsonObject);
-        String j = gson.toJson(oJsonObject);
+    //     String json = new Gson().toJson(objeto1);
+    //     String json2 = new Gson().toJson(oJsonObject);
+    //     String j = gson.toJson(oJsonObject);
 
 
-        try {
-            FileWriter writer = new FileWriter(fileName+".json");
-            FileWriter writer2 = new FileWriter(fileName+"2.json");
-            writer.write(json);
-            writer2.write(json2);
+    //     try {
+    //         FileWriter writer = new FileWriter(fileName+".json");
+    //         FileWriter writer2 = new FileWriter(fileName+"2.json");
+    //         writer.write(json);
+    //         writer2.write(json2);
 
-            writer.close();
-            writer2.close();
+    //         writer.close();
+    //         writer2.close();
+    //     } catch (IOException e) {
+    //         System.out.println("Algo fallo en el metodo saveTasksFile");
+    //     }
+    // }
+
+    public void saveTasksToFile(String fileName){
+        Gson gson=new Gson();
+        try (FileWriter writer=new FileWriter(fileName)){
+            writer.write(gson.toJson(listaTareas));
         } catch (IOException e) {
-            System.out.println("Algo fallo en el metodo saveTasksFile");
+            throw new RuntimeException(e);
         }
     }
 
     //carga la lista de tareas desde un archivo JSON con el nombre especificado.
-    void loadTasksFromFile(String fileName){
-        String json="";
-        try (FileReader reader = new FileReader(fileName)) {
-            int character;
-            while ((character=reader.read())!=-1) {
-                json+=(char)character;
-            }
-            System.out.println(json);
+    // void loadTasksFromFile(String fileName){
+    //     String json="";
+    //     try (FileReader reader = new FileReader(fileName)) {
+    //         int character;
+    //         while ((character=reader.read())!=-1) {
+    //             json+=(char)character;
+    //         }
+    //         System.out.println(json);
 
+    //     } catch (IOException e) {
+    //         System.out.println("No encontrado");
+    //     }
+    // }
+    public void loadTasksFromFile(String fileName){
+        Gson gson=new Gson();
+        Type tipoListaPersonas = new TypeToken<ArrayList<Task>>(){}.getType();
+        try (FileReader reader=new FileReader(fileName)){
+            listaTareas=gson.fromJson(reader,tipoListaPersonas);
+            listaTareas.stream().forEach(System.out::println);
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
         } catch (IOException e) {
-            System.out.println("No encontrado");
+            throw new RuntimeException(e);
         }
-    }
+}
 }
