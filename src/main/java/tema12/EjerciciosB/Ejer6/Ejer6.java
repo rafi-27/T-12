@@ -28,8 +28,6 @@ public class Ejer6 {
             }
             System.out.println((existe)?"El numero "+numeroABuscar+" existe.":"El numero "+numeroABuscar+" no existe.");
 
-
-
         } catch (Exception e) {
             System.out.println("Ha ocurrido un error."+e.getCause());
             System.out.println("El numero no puede tener una longitud mayor a 1000000.");

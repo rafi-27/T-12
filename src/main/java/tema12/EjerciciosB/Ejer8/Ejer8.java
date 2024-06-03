@@ -13,7 +13,7 @@ import utilidades.Persona;
 public class Ejer8 {
     public static void main(String[] args) {
         File f = new File("src/main/java/tema12/EjerciciosB/Documentos/datos_personas.csv");
-        Scanner sc = new Scanner(System.in);
+         //Scanner sc = new Scanner(System.in);
         try (Scanner lector = new Scanner(new File("src/main/java/tema12/EjerciciosB/Documentos/datos_personas.csv"),
                 "UTF-8")) {
             Map<String, Persona> listaPersonas = new HashMap();
@@ -43,6 +43,11 @@ public class Ejer8 {
                         escribe.write(dni+";"+nombre+";"+apellido+";"+edad+"\n");
                     }
                 }
+                for (Persona string : listaPersonas.values()) {
+                    if (string.esJubilado()) {
+                        string.imprime();
+                    }
+                }
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -65,21 +70,21 @@ public class Ejer8 {
 
             //Buscar usuarios con bucle infinito hasta que se introduzca 'fin';
 
-            while (true) {
-                System.out.println("Introduce el dni a buscar o fin para terminar: ");
-                String entradaDNI = sc.nextLine();
+            // while (true) {
+            //     System.out.println("Introduce el dni a buscar o fin para terminar: ");
+            //     String entradaDNI = sc.nextLine();
 
-                if (entradaDNI.equalsIgnoreCase("fin")) {
-                    break;
-                }else{
-                    Persona p = listaPersonas.get(entradaDNI);
-                    if (p.validarDNI(entradaDNI)) {
-                        p.imprime();
-                    }else{
-                        System.err.println("DNI no registrado.");
-                    }
-                }
-            }
+            //     if (entradaDNI.equalsIgnoreCase("fin")) {
+            //         break;
+            //     }else{
+            //         Persona p = listaPersonas.get(entradaDNI);
+            //         if (p.validarDNI(entradaDNI)) {
+            //             p.imprime();
+            //         }else{
+            //             System.err.println("DNI no registrado.");
+            //         }
+            //     }
+            // }
 
         } catch (Exception e) {
             System.out.println("Algo a fallado.");
